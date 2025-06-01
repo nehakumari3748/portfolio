@@ -1,11 +1,11 @@
-p<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>My Portfolio</title>
 
-  <style>
+<style>
     * {
       margin: 0;
       padding: 0;
@@ -15,15 +15,36 @@ p<!DOCTYPE html>
 
     body {
       line-height: 1.6;
+      background-color: wheat;
     }
 
     header, nav, section, footer {
       padding: 20px;
     }
 
+    header{
+      height: 120px;
+      padding: 20px;
+      background-color: #f0f0f0;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+
+    .profile-img{
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 2px solid #ccc;
+    }
+  
+    
+  
+
     nav {
-      background: #333;
-      color: #fff;
+      background: burlywood;
+      color: white;
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -46,27 +67,20 @@ p<!DOCTYPE html>
     .hero {
       background: url('https://via.placeholder.com/1200x400') no-repeat center center/cover;
       height: 400px;
-      color: white;
+      color: black;
       display: flex;
       align-items: center;
       justify-content: center;
       text-align: center;
+      
     }
 
     .section-title {
       font-size: 2rem;
       margin-bottom: 10px;
     }
-    .image-box{
-      display: flex;
-      justify-content: center;
-      width: 300px;
-      height: 200px;
-      background-image:("C:\Users\nk766\OneDrive\Desktop\porfoloio pictures.avif");
-      background-size: cover;
-      background-position: center;
-    }
-    .skill{
+    
+    #skill{
       #skills {
     padding: 60px 20px;
     background: linear-gradient(to right, #e0f7fa, #ffffff);
@@ -159,7 +173,7 @@ p<!DOCTYPE html>
       padding: 10px 0;
     }
 
-    @media screen and(max-width: 500px) {
+    @media screen and (max-width: 500px) {
       .header a{
         float: none;
         display: block;
@@ -171,13 +185,9 @@ p<!DOCTYPE html>
     }
   </style>
 </head>
+  
+
 <body>
-  <header>
-    <div class="Container">
-      <h1>Neha Kumari</h1>
-      <p>software engineer | Web developer | Tech Enthusiast</p>
-    </div>
-  </header>
   <nav>
     <h1>My Portfolio</h1>
     <ul>
@@ -188,18 +198,32 @@ p<!DOCTYPE html>
       <li><a href="#contact">Contact</a></li>
     </ul>
   </nav>
+  
+  <header>
+    <div class="Container">
+      <h1>Neha Kumari</h1>
+      <p>software engineer | Web developer | Tech Enthusiast</p>
+       </div>
+      <div class="image"></div>
+      <img src="https://drive.google.com/file/d/1MEYc8kyhqAYy4gvW8WcXVbi6V09THC_S/view?usp=drive_link" alt="profile picture" class="profile-img">
+ 
+  </header>
+  
 
   <section class="hero" id="home">
     <div>
       <h2>Welcome to My Portfolio</h2>
-      <div class="image-box">image-box</div>
+      <img src="https://t3.ftcdn.net/jpg/08/33/84/98/240_F_833849841_s9ikrcxCtGcEzMtVCp4cFpnUKhMJRkWK.jpg" alt="portfolio" width ="100%" height="80%"/>
       <p>I'm a web developer passionate about building great user experiences.</p>
     </div>
   </section>
 
   <section id="about">
     <h2 class="section-title">About Me</h2>
-    <p>I am a software engineer with a strong foundation in computer science. I enjoy turning complex problems into simple, beautiful solutions.</p>
+    <p> hey I'm Neha kumari currently pursuing a Bachelor's degree in computer science engineering from rvs college of engineering and technology jamshedpur<br>
+     and I am a software engineer with a strong foundation in computer science. I enjoy turning complex problems into simple, beautiful solutions.
+     and I'm on a rentless journey of discovery of technology and tech enthusiastic.
+    </p>
   </section>
 
   <section id="projects">
@@ -207,17 +231,18 @@ p<!DOCTYPE html>
     <div class="projects">
       <div class="project">
         <h3>To Do list</h3>
-        <img src="C:\Users\nk766\OneDrive\Desktop\todo list.avif" alt="photo" width="100%"  height="80%"/>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTschmXwe1L4lwpSWHwM3CKd6Z6vRmrtx0tiFXp-egCXCqsJ44WiSr3mQ&s" alt="photo" width="100%"  height="80%"/>
         <p>A simple and efficient TO Do List web application designed to help users manage tasks effectively.<br>
         the app allows users to create updates and delete tasks marks tasks as completed, and organize their daily activities with ease.</p></p>
       </div>
       <div class="project">
         <h3>Employee Management</h3>
 
-        <img src="C:\Users\nk766\OneDrive\Desktop\employee management.avif" alt="Photo" width="100%" height="80%" />
-        <p><p>A software application designed to manage employee data efficiently .It inclueds features like employee registration, attendence tracking. leave management <br>
+        <img src="C:\Users\nk766\OneDrive\Desktop\employee management.avif" alt="Photo" width="100%" height="80%" /> 
+          <p>A software application designed to manage employee data efficiently .It inclueds features like employee registration, attendence tracking. leave management <br>
            payroll processing etc.
-        </p></p>
+        </p>
+  
       </div>
   </section>
 
@@ -250,7 +275,7 @@ p<!DOCTYPE html>
   </section>
 
   <footer>
-    
+    @2025 Neha Kumari
   </footer>
 
   <script>
